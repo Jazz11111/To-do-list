@@ -3,7 +3,8 @@ import React from 'react'
 function AddTaskForm({handleSubmit,handleInputChange,newTask}) {
   return (
     <form onSubmit={handleSubmit} className="form">
-        <label htmlFor="newitem">Add the Todo List</label>
+        <label htmlFor="newitem">Add the Todo List :</label>
+        <br></br>
         <input
           type="text"
           id="newitem"

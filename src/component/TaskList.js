@@ -23,7 +23,7 @@ function TaskList({
           ))}
       </ul>
       <div className="filter-wrapper">
-        <label htmlFor="filter" className="filter-label">
+        <label htmlFor="filter" className="filter-label">Show Incomplete Task Only
         </label>
         <input
           type="checkbox"

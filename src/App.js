@@ -44,30 +44,20 @@ function App() {
 
   return (
     <div className="container">
-     <Header title="Todo List" subTitle="Get it done" />
-     <TaskList tasks ={tasks} 
-     showIncomplete={showIncomplete} 
-     setTaskStatus ={setTaskStatus}
-      removeTask = {removeTask}
-      setShowIncomplete={setShowIncomplete}/>
-    
-      
+      <Header title="Todo List" subTitle="Get it done" />
+      <TaskList
+        tasks={tasks}
+        showIncomplete={showIncomplete}
+        setTaskStatus={setTaskStatus}
+        removeTask={removeTask}
+        setShowIncomplete={setShowIncomplete}
+      />
 
-      <div className="filter-wrapper">
-        <label htmlFor="filter" className="filter-label">
-          Show incompleted task only
-        </label>
-        <input
-          type="checkbox"
-          id="filter"
-          checked={showIncomplete}
-          onChange={(e) => setShowIncomplete(e.target.checked)}
-        />
-      </div>
       <AddTaskForm
-      newTask={newTask}
-      handleInputChange={handleInputChange}
-      handleSubmit={handleSubmit}/>
+        newTask={newTask}
+        handleInputChange={handleInputChange}
+        handleSubmit={handleSubmit}
+      />
     </div>
   );
 }
