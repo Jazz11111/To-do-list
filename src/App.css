@@ -38,6 +38,9 @@
   .task-list li.done {
     text-decoration: line-through;
 }
+.form {
+ flex-direction:row;
+}
 
   .fall {
     transform: rotate(10deg);
